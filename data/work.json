@@ -1,0 +1,23 @@
+[
+    {
+        "id": 0,
+        "darbo_tipas": "Programavimas",
+        "aprasymas": "programavimas",
+        "darbo_val": 70,
+        "darbuotojo_vardas": "Algirdas"
+    },
+    {
+        "id": 1,
+        "darbo_tipas": "Administracija",
+        "aprasymas": "administravimas",
+        "darbo_val": 10,
+        "darbuotojo_vardas": "Jonas"
+    },
+    {
+        "id": 2,
+        "darbo_tipas": "Programavimas",
+        "aprasymas": "programavimas",
+        "darbo_val": 5,
+        "darbuotojo_vardas": "Petras"
+    }
+]
