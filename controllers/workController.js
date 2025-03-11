@@ -59,11 +59,20 @@ exports.getSalary = (req, res)=>{
 }
 
 exports.createJob = (req, res)=>{
-        const newJob= req.body;
-            jobs.push(req.body);
-            console.log(jobs);
-        res.status(201).json({
-            status: "success",
-            newJob
-        })
+        const newID = jobs[jobs.length-1].id+1;
+        const newJob = Object.assign({id: newID}, req.body);
+
+        jobs.push(newJob);
+        fs.writeFile(
+            `${__dirname}/../data/work.json`,
+            JSON.stringify(jobs),
+            ()=>{
+                res.status(201).json({
+                    status: "success",
+                    data:{
+                        newJob
+                    }
+                })
+            }
+        )
 }
